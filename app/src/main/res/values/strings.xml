@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TutorialJavaOnclick</string>
+    <string name="nama">Nama</string>
+    <string name="kelamin">Kelamin</string>
+    <string name="alamat">Alamat</string>
+    <string name="simpan">Simpan</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+</resources>
