@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AlertDialogLayout;
 
 import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -46,7 +48,19 @@ public class LoginActivity extends AppCompatActivity {
                     if (username.equals("admin") && pass.equals("12345")){
                         Toast.makeText(LoginActivity.this, "Berhasil Login",
                                 Toast.LENGTH_SHORT).show();
-                        
+                        //mengirim data menggunakan intent
+                        Intent ngirimData = new Intent(LoginActivity.this,
+                                AdminActivity.class);
+                        //isi data yang dikirim
+                        ngirimData.putExtra("USERNAME", username);
+                        ngirimData.putExtra("PASS", pass);
+                        startActivity(ngirimData);
+
+
+
+
+                       // showAlert(username,pass);
+
                     } else{
                         Toast.makeText(LoginActivity.this, "Gagal Login",
                                 Toast.LENGTH_SHORT).show();
@@ -62,7 +76,29 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+    private void showAlert(String username, String pass) {
+        AlertDialog.Builder dialog =
+                new AlertDialog.Builder(LoginActivity.this);
 
+        dialog.setTitle("Berhasil Login");
+        dialog.setMessage("Anda Berhasil Login dengan Username :"+username +" Pass :"+pass);
+        dialog.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        dialog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                //di isi ketika user klik no
+            }
+        });
+
+        dialog.show();
+
+
+    }
 
 
 }
