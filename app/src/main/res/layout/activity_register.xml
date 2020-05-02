@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/bg"
+    tools:context=".register.RegisterActivity">
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        android:text="FORM REGISTER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textColorHint="#Fff"
+        android:id="@+id/edt_username"
+        android:drawablePadding="10dp"
+        android:hint="Username"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <EditText
+        android:textColorHint="#Fff"
+        android:id="@+id/edt_email"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <EditText
+        android:textColorHint="#Fff"
+        android:id="@+id/edt_pass"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <EditText
+        android:textColorHint="#Fff"
+        android:id="@+id/edt_repass"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="10dp"
+        android:hint="Re-Password"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:gravity="center"
+        android:textColor="#888181"
+        android:textSize="16sp"
+        android:text="REGISTER"
+        android:background="@drawable/bg_button"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <TextView
+        android:textColor="#FF9800"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Sudah punya akun? Login Sekarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

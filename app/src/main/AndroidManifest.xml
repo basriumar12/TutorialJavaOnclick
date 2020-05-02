@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".bottom_dialog.BottomDialogActivity">
+        <activity android:name=".register.RegisterActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,11 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".splash.SplashScreenActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".bottom_dialog.BottomDialogActivity">
 
         </activity>
+        <activity
+            android:name=".splash.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
         <activity android:name=".spinner.SpinnerActivity" />
         <activity android:name=".AdminActivity" />
         <activity android:name=".LoginActivity" />
